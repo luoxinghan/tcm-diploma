@@ -1,0 +1,19 @@
+{
+  "data": [
+    {
+      "menuCode": "002",
+      "menuName": "诊断方法",
+      "level": "2",
+      "imgUrl": "https://i.loli.net/2019/11/16/rUzXQ7VEOMdH6af.jpg",
+      "isShow": 1,
+      "isModify" : 0
+    },
+    {
+      "menuCode": "002",
+      "menuName": "诊断方法",
+      "level": "2",
+      "isShow": 1,
+      "isModify" : 0
+    }
+  ]
+}

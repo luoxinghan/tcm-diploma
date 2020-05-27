@@ -1,0 +1,7 @@
+{
+  "getSubMenusByParentCode" : "SELECT * FROM sys_menu WHERE parent_code = ? ORDER BY menu_code DESC;",
+  "insertRecord " : "INSERT INTO sys_menu(menu_code, menu_name, parent_code, level, is_show, is_modify, imgUrl) VALUES(?, ?, ?, ?, ?, ?, ?);",
+  "deleteRecordByMenuCode" : "UPDATE sys_menu \nSET is_show = 0\nWHERE sys_menu.menu_code REGEXP ?;",
+  "updateFiledIsShow" : "UPDATE sys_menu \nSET is_show = ?\nWHERE sys_menu.menu_code REGEXP ?;",
+  "update" : "UPDATE sys_menu \nSET menu_name = ?, `level` = ?, imgUrl = ?, is_show = ?, is_modify = ? \nWHERE menu_code = ?;"
+}

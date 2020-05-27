@@ -1,0 +1,14 @@
+{
+  "success": true,
+  "data": {
+    "code": 400,
+    "message": "",
+    "isLogged": false,
+    "currentUser": {
+      "id": -1,
+      "username": "",
+      "roleId": -1,
+      "imgUrl": ""
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "addRecord" : "INSERT INTO sys_role (role_name) VALUES (?);",
+  "deleteRecord" : "DELETE FROM sys_role WHERE role_id = ?;",
+  "getAllRecords" : "SELECT * FROM sys_role;",
+  "updateRecord" : "UPDATE sys_role \nSET role_name = ?\nWHERE role_id = ?;"
+}

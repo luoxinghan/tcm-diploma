@@ -1,0 +1,14 @@
+{
+  "success": "",
+  "data": {
+      "code": "",
+      "message": "",
+      "isLogged": "",
+      "currentUser": {
+          "id": "",
+          "username": "",
+          "roleId": "",
+          "imgUrl": ""
+    }
+  }
+}

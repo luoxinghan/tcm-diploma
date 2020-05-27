@@ -1,0 +1,11 @@
+{
+  "insertRecord" : "INSERT INTO sys_massage_course(title, content, lecturer, address, lecture_time, published_time, is_show, img_url)\nVALUES(?, ?, ?, ?, ?, ?, ?, ?);",
+  "getAllRecords" : "SELECT * FROM sys_massage_course;",
+  "updateRecord" : "UPDATE sys_massage_course\nSET title = ?, content = ?, lecturer = ?, address = ?, lecture_time = ?,\npublished_time = ?, is_show = ?, img_url = ?\nWHERE course_id = ?;",
+  "updateIsShow" : "UPDATE sys_massage_course\nSET  is_show = ?\nWHERE course_id = ?;",
+  "deleteRecord" : "DELETE FROM  sys_massage_course WHERE course_id = ?;",
+  "insertImages" : "\nINSERT INTO sys_file(file_type, file_path, upload_time)\nVALUES ?;",
+  "getAllImages" : "SELECT * FROM sys_file WHERE file_type = 2;",
+  "deleteImage" : "delete from sys_file where file_id = ?;",
+  "getCourseById" : "select * from sys_massage_course where course_id = ?;"
+}

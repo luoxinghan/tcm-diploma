@@ -1,0 +1,3 @@
+{
+  "sql" : "SELECT rel_menu_article.article_id, article_title, imgUrl, published_time\nFROM sys_article, rel_menu_article\nWHERE sys_article.article_id = rel_menu_article.article_id\nAND sys_article.is_show = 1 AND rel_menu_article.menu_code = ? ORDER BY published_time DESC;"
+}

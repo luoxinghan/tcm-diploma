@@ -1,0 +1,3 @@
+{
+  "getAdminAllInfoById" : "SELECT * FROM `sys_admin` WHERE admin_account = ?;"
+}

@@ -1,0 +1,15 @@
+{
+  "insertRecord" : "INSERT INTO sys_article(article_title, article_raw, published_time, is_show, imgUrl) VALUES(?, ?, ?, ?, ?);",
+  "insertRelationTableRecord" : "INSERT INTO rel_menu_article(menu_code, article_id) VALUES(?, ?);",
+  "getMaxArticleId" : "select max(article_id) AS article_id from sys_article;",
+  "deleteRecord" : "DELETE FROM sys_article WHERE article_id = ?;",
+  "updateRecord" : "UPDATE sys_article \nSET article_title = ?, article_raw = ?, published_time = ?, imgUrl =?\nWHERE article_id = ?;",
+  "updateRelationTableMenuCode" : "UPDATE rel_menu_article \nSET menu_code = ?\nWHERE article_id =?;\n",
+  "updateIsShowAttribute" : "UPDATE sys_article\nSET is_show = ?\nWHERE article_id = ?;",
+  "getAllRecord" : "SELECT * FROM sys_article;",
+  "getAllRecordsWithoutSomeFields": "SELECT sys_article.article_id, sys_article.article_title, sys_article.published_time, sys_article.is_show FROM sys_article;",
+  "deleteRelationTableRecord" : "DELETE FROM rel_menu_article WHERE article_id = ?;",
+  "getArticleById" :"SELECT article_title, imgUrl, article_raw, published_time, is_show\nFROM sys_article\nWHERE article_id = ?;",
+  "getMenuInfo" : "SELECT sys_menu.menu_code, menu_name, parent_code, `level`, is_show, is_modify \nFROM sys_menu, rel_menu_article\nWHERE sys_menu.menu_code = rel_menu_article.menu_code AND rel_menu_article.article_id = ?;",
+  "getArticleByMenuCode" : "SELECT sys_article.article_id, sys_article.article_title, sys_article.published_time, sys_article.is_show\nFROM sys_article, rel_menu_article\nWHERE sys_article.article_id = rel_menu_article.article_id AND rel_menu_article.menu_code REGEXP ? ORDER BY published_time DESC;"
+}

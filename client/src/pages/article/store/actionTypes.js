@@ -1,0 +1,1 @@
+export const CHANGE_CURRENT = "article/change_current";

@@ -1,0 +1,7 @@
+{
+  "insertRecord" : "INSERT INTO sys_file(file_type, file_path, `order`, upload_time)\nVALUES(?,?,?,?);",
+  "getMaxId" : "select max(file_id) AS file_id from sys_file;",
+  "deleteRecord" : "delete from sys_file where file_id = ?",
+  "getAllRecords" : "select * from sys_file where file_type = 1 ORDER BY `order`;",
+  "updateRecord" : "UPDATE sys_file\nSET file_type = ?, file_path = ?, `order` = ?, upload_time = ? \nWHERE file_id = ?;"
+}

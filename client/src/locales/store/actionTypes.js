@@ -1,0 +1,1 @@
+export const CHANGE_LOCALES_ACTION = "locales/change_locales_action";

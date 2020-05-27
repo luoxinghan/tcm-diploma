@@ -1,0 +1,8 @@
+{
+  "addRecord" : "INSERT INTO sys_employee(role_id, avatar_url, name, sex, phone_num, date_of_birth, address, employee_description)\nVALUES(?, ?, ?, ?, ?, ?, ?, ?);",
+  "getMaxId" : "select max(employee_id) AS employee_id from sys_employee;",
+  "getRoleName" : "SELECT role_name FROM sys_role WHERE role_id = ?;",
+  "deleteRecord" : "DELETE FROM sys_employee WHERE employee_id = ?;",
+  "getAllRecords" : "SELECT employee_id,sys_employee.role_id, role_name, avatar_url, name, sex, phone_num, date_of_birth, address, employee_description\nFROM sys_employee, sys_role\nWHERE sys_employee.role_id = sys_role.role_id;",
+  "updateRecord" : "UPDATE sys_employee\nSET role_id = ?, avatar_url = ?, name = ?, sex = ?, phone_num = ?, date_of_birth = ?, address = ?, employee_description = ?\nWHERE employee_id = ?;"
+}
